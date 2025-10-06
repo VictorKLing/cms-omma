@@ -61,6 +61,70 @@ export default {
             { name: 'href', type: 'string', title: 'Link do botão' }
           ]
         },
+        {
+          name: 'cards',
+          type: 'array',
+          title: 'Cards',
+          of: [
+            {
+              type: 'object',
+              title: 'Card',
+              fields: [
+                {
+                  name: 'title',
+                  type: 'string',
+                  title: 'Título do Card'
+                },
+                {
+                  name: 'svg',
+                  type: 'text',
+                  title: 'SVG',
+                  rows: 5,
+                  description: 'Cole aqui o código SVG (ex: <svg ...>...</svg>)'
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      name: 'projetos',
+      type: 'object',
+      title: 'Projetos',
+      fields: [
+        {
+          name: 'projects',
+          type: 'array',
+          title: 'Projetos',
+          of: [
+            {
+              type: 'object',
+              title: 'Projeto',
+              fields: [
+                { name: 'category', type: 'string', title: 'Categoria' },
+                { name: 'title', type: 'string', title: 'Título' },
+                { name: 'description', type: 'text', title: 'Descrição' },
+                { name: 'banner', type: 'image', title: 'Imagem de destaque'},
+                { name: 'href', type: 'string', title: 'Link do botão' }
+              ]
+            }
+          ]
+        },
+        {
+          name: 'stats',
+          type: 'array',
+          title: 'Estatísticas da Empresa',
+          of: [
+            {
+              type: 'object',
+              fields: [
+                { name: 'number', type: 'string', title: 'Número' },
+                { name: 'label', type: 'string', title: 'Descrição' }
+              ]
+            }
+          ]
+        },
       ]
     }
   ],
