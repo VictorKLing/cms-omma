@@ -1,37 +1,12 @@
 export default {
-  name: 'atuacao',
+  name: 'obras-realizadas',
   type: 'document',
-  title: 'Atuacão',
+  title: 'Obras Realizadas',
   fields: [
     {
       name: 'titulo',
       title: 'Título',
       type: 'string',
-    },
-    {
-      name: 'subtitulo',
-      title: 'Subtítulo',
-      type: 'string',
-    },
-    {
-      name: 'galeria',
-      title: 'Galeria de Imagens',
-      type: 'array',
-      of: [
-        {
-          type: 'image',
-          options: {
-            hotspot: true
-          },
-          fields: [
-            {
-              name: 'alt',
-              type: 'string',
-              title: 'Texto Alternativo'
-            }
-          ]
-        }
-      ]
     },
     {
       name: 'cards',
