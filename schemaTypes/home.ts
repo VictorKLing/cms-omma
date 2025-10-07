@@ -126,6 +126,203 @@ export default {
           ]
         },
       ]
+    },
+    {
+      name: 'clientes',
+      type: 'object',
+      title: 'Projetos',
+      fields: [
+        {
+          name: 'title',
+          type: 'string',
+          title: 'Título da seção'
+        },
+        {
+          name: 'brands',
+          type: 'array',
+          title: 'Marcas',
+          of: [{ type: 'string' }]
+        }
+      ]
+    },
+    {
+      name: 'metodologia',
+      type: 'object',
+      title: 'Metodologia',
+      fields: [
+        {
+          name: 'title',
+          type: 'string',
+          title: 'Título da seção'
+        },
+        {
+          name: 'subtitle',
+          type: 'string',
+          title: 'Subtítulo da seção'
+        },
+       {
+        name: 'cards',
+        type: 'array',
+        title: 'Cards',
+        of: [
+          {
+            type: 'object',
+            title: 'Card',
+            fields: [
+              {
+                name: 'title',
+                type: 'string',
+                title: 'Título do Card'
+              },
+              {
+                name: 'description',
+                type: 'array',
+                title: 'Descrição do Card',
+                of: [{ type: 'block' }]
+              },
+              {
+                name: 'svg',
+                type: 'text',
+                title: 'SVG',
+                rows: 5,
+                description: 'Cole aqui o código SVG (ex: <svg ...>...</svg>)'
+              }
+            ]
+          }
+        ]
+      },
+      {
+        name: 'button',
+        type: 'object',
+        title: 'Botão',
+        fields: [
+          { name: 'text', type: 'string', title: 'Texto do botão' },
+          { name: 'href', type: 'string', title: 'Link do botão' }
+        ]
+      }
+      ]
+    },
+    {
+      name: 'section06',
+      type: 'object',
+      title: 'Seção 06',
+      fields: [
+        // CTA
+        {
+          name: 'cta',
+          type: 'object',
+          title: 'CTA Inicial',
+          fields: [
+            { name: 'title', type: 'string', title: 'Título' },
+            { name: 'subtitle', type: 'string', title: 'Subtítulo' },
+            {
+              name: 'buttons',
+              type: 'array',
+              title: 'Botões',
+              of: [
+                {
+                  type: 'object',
+                  fields: [
+                    { name: 'text', type: 'string', title: 'Texto do botão' },
+                    { name: 'href', type: 'string', title: 'Link do botão' }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+
+        // Sobre
+        {
+          name: 'sobre',
+          type: 'object',
+          title: 'Seção Sobre',
+          fields: [
+            { name: 'title', type: 'string', title: 'Título' },
+            { name: 'subtitle', type: 'string', title: 'Subtítulo' },
+            {
+              name: 'description',
+              type: 'array',
+              title: 'Descrição',
+              of: [{ type: 'block' }]
+            },
+            {
+              name: 'button',
+              type: 'object',
+              title: 'Botão',
+              fields: [
+                { name: 'text', type: 'string', title: 'Texto' },
+                { name: 'href', type: 'string', title: 'Link' }
+              ]
+            },
+            {
+              name: 'images',
+              type: 'array',
+              title: 'Imagens',
+              of: [{ type: 'image' }]
+            }
+          ]
+        },
+
+        // Depoimento
+        {
+          name: 'depoimento',
+          type: 'object',
+          title: 'Depoimento',
+          fields: [
+            { name: 'photo', type: 'image', title: 'Foto do Cliente' },
+            {
+              name: 'text',
+              type: 'array',
+              title: 'Texto do Depoimento',
+              of: [{ type: 'block' }]
+            },
+            { name: 'location', type: 'string', title: 'Localização' },
+            { name: 'extra', type: 'string', title: 'Informação Extra (ex: prazo)' }
+          ]
+        },
+
+        // Parceria Arquitetos
+        {
+          name: 'parceria',
+          type: 'object',
+          title: 'Parceria Arquitetos',
+          fields: [
+            { name: 'title', type: 'string', title: 'Título' },
+            {
+              name: 'description',
+              type: 'array',
+              title: 'Descrição',
+              of: [{ type: 'block' }]
+            },
+            {
+              name: 'button',
+              type: 'object',
+              title: 'Botão',
+              fields: [
+                { name: 'text', type: 'string', title: 'Texto' },
+                { name: 'href', type: 'string', title: 'Link' }
+              ]
+            },
+            {
+              name: 'images',
+              type: 'array',
+              title: 'Imagens',
+              of: [{ type: 'image' }]
+            }
+          ]
+        },
+
+        // Contato
+        {
+          name: 'contato',
+          type: 'object',
+          title: 'Seção Contato',
+          fields: [
+            { name: 'title', type: 'string', title: 'Título' }
+          ]
+        }
+      ]
     }
   ],
 

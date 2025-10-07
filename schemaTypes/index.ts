@@ -1,2 +1,5 @@
 import home from './home';
-export const schemaTypes = [home];
+import quemSomos from './quem-somos';
+import atuacao from './atuacao';
+
+export const schemaTypes = [home, quemSomos, atuacao];
