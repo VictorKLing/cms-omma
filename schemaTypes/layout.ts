@@ -1,4 +1,3 @@
-// schemas/layout.ts
 export default {
   name: 'layout',
   type: 'document',
@@ -21,6 +20,11 @@ export default {
               name: 'href',
               type: 'string',
               title: 'URL do Link'
+            },
+            {
+              name: 'highlight',
+              type: 'boolean',
+              title: 'Destaque?'
             }
           ]
         }
@@ -36,6 +40,21 @@ export default {
       name: 'footerText',
       type: 'string',
       title: 'Texto do Rodapé'
+    },
+    {
+      name: 'endereco',
+      type: 'string',
+      title: 'Endereço'
+    },
+    {
+      name: 'telefone',
+      type: 'string',
+      title: 'Telefone'
+    },
+    {
+      name: 'email',
+      type: 'string',
+      title: 'E-mail'
     }
   ]
 };
