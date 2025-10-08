@@ -71,4 +71,11 @@ export default {
         ]
         }
   ],
+  preview: {
+    prepare() {
+      return {
+        title: 'Metodologia'
+      }
+    }
+  }
 };

@@ -56,5 +56,12 @@ export default {
       type: 'string',
       title: 'E-mail'
     }
-  ]
+  ],
+  preview: {
+    prepare() {
+      return {
+        title: 'Layout'
+      }
+    }
+  }
 };

@@ -28,4 +28,11 @@ export default {
       ],
     },
   ],
+  preview: {
+    prepare() {
+      return {
+        title: 'Quem somos'
+      }
+    }
+  }
 };

@@ -329,7 +329,7 @@ export default {
   preview: {
     prepare() {
       return {
-        title: 'Hero'
+        title: 'Home'
       }
     }
   }

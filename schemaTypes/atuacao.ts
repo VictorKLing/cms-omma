@@ -55,5 +55,12 @@ export default {
         },
       ],
     },
-  ]
+  ],
+  preview: {
+    prepare() {
+      return {
+        title: 'Atuação'
+      }
+    }
+  }
 };
